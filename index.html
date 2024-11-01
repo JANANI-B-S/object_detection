@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Object Detection with Camera</title>
+    <style>
+        #video {
+            width: 100%;
+            max-width: 640px;
+            height: auto;
+            border: 1px solid #ddd;
+        }
+        #output {
+            max-width: 640px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Object Detection with Camera</h1>
+    <button id="scanButton">Scan</button>
+    <video id="video" autoplay></video>
+    <canvas id="output"></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+    <script src="app.js"></script>
+</body>
+</html>
